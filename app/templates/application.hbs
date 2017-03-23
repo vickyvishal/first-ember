@@ -1,0 +1,12 @@
+<h1>Main Page</h1>
+<table class="table table-bordered">
+	{{#each product in content}}
+		<tr>
+			<td>{product.name}</td>
+			<td>$ {{product.price}} INR</td>
+			<td><a {{action editProduct product href="true"}}></a></td>
+		</tr>
+	{{/each}}
+</table>
+
+{{outlet}}

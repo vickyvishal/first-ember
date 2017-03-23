@@ -1,0 +1,1 @@
+{"_id":"_design/myproducts","_rev":"1-c3e5855dd94d96ecfa1f86f46a0094bc","language":"javascript","views":{"books_by_isbn":{"map":"function (doc) { if(doc.ISBN) { emit (doc.ISBN, doc); } }"}}}
